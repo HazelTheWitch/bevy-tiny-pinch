@@ -304,9 +304,9 @@ pub(crate) struct ArchetypeSwapRemoveResult {
 /// Internal metadata for a [`Component`] within a given [`Archetype`].
 ///
 /// [`Component`]: crate::component::Component
-struct ArchetypeComponentInfo {
-    storage_type: StorageType,
-    archetype_component_id: ArchetypeComponentId,
+pub struct ArchetypeComponentInfo {
+    pub storage_type: StorageType,
+    pub archetype_component_id: ArchetypeComponentId,
 }
 
 bitflags::bitflags! {
