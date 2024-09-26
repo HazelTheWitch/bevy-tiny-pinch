@@ -258,11 +258,11 @@ pub enum Chain {
 /// }
 /// ```
 pub struct Schedule {
-    label: InternedScheduleLabel,
-    graph: ScheduleGraph,
-    executable: SystemSchedule,
-    executor: Box<dyn SystemExecutor>,
-    executor_initialized: bool,
+    pub label: InternedScheduleLabel,
+    pub graph: ScheduleGraph,
+    pub executable: SystemSchedule,
+    pub executor: Box<dyn SystemExecutor>,
+    pub executor_initialized: bool,
 }
 
 #[derive(ScheduleLabel, Hash, PartialEq, Eq, Debug, Clone)]
