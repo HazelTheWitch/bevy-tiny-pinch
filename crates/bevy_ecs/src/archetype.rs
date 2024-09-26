@@ -331,12 +331,12 @@ bitflags::bitflags! {
 /// [`World`]: crate::world::World
 /// [module level documentation]: crate::archetype
 pub struct Archetype {
-    id: ArchetypeId,
-    table_id: TableId,
-    edges: Edges,
-    entities: Vec<ArchetypeEntity>,
-    components: ImmutableSparseSet<ComponentId, ArchetypeComponentInfo>,
-    flags: ArchetypeFlags,
+    pub id: ArchetypeId,
+    pub table_id: TableId,
+    pub edges: Edges,
+    pub entities: Vec<ArchetypeEntity>,
+    pub components: ImmutableSparseSet<ComponentId, ArchetypeComponentInfo>,
+    pub flags: ArchetypeFlags,
 }
 
 impl Archetype {
