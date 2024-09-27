@@ -15,7 +15,7 @@ pub struct ResourceData<const SEND: bool> {
     added_ticks: UnsafeCell<Tick>,
     changed_ticks: UnsafeCell<Tick>,
     type_name: String,
-    id: ArchetypeComponentId,
+    pub id: ArchetypeComponentId,
     origin_thread_id: Option<ThreadId>,
 }
 
