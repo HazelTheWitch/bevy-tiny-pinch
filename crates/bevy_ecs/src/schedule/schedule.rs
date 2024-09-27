@@ -28,7 +28,7 @@ pub use stepping::Stepping;
 /// Resource that stores [`Schedule`]s mapped to [`ScheduleLabel`]s excluding the current running [`Schedule`].
 #[derive(Default, Resource)]
 pub struct Schedules {
-    inner: HashMap<InternedScheduleLabel, Schedule>,
+    pub inner: HashMap<InternedScheduleLabel, Schedule>,
     /// List of [`ComponentId`]s to ignore when reporting system order ambiguity conflicts
     pub ignored_scheduling_ambiguities: BTreeSet<ComponentId>,
 }
